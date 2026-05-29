@@ -1,0 +1,47 @@
+# ==========================================
+# 1. 依赖管理 (Dependencies)
+# ==========================================
+node_modules/
+.pnpm-debug.log*
+
+# ==========================================
+# 2. 敏感信息与本地配置 (Local Env / Secrets)
+# ==========================================
+# 极其重要：防止你的 MySQL 密码和 JWT 密钥泄露到 GitHub
+.env
+.env.local
+.env.*.local
+
+# ==========================================
+# 3. 前端打包产物 (Build outputs)
+# ==========================================
+client/dist/
+client/dist-ssr/
+*.local
+
+# ==========================================
+# 4. 编辑器与系统临时文件 (IDE & System)
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 5. 日志与缓存 (Logs and Databases)
+# ==========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 本地测试中使用的 SQLite 文件
+*.db
+*.db-journal
